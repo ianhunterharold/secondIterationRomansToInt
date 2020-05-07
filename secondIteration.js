@@ -19,7 +19,7 @@ const romanNumsToNums = function(roman){
   const mapOver = arrOfChar.map(char => romanKeys[char])
    
   if (mapOver.length === 1){
-       return arrayOfNumbers[0];
+       return mapOver[0];
     }
 
   return mapOver.reduce( (accumulator,element,index,array) => {
